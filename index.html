@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Generatore Annunci - UGC</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Annunci - UnderGround Club</h1>
+        <img src="logo.png" alt="Logo" class="logo">
+        <form id="announcementForm">
+            <div class="input-container data">
+                <label for="dataInput">Data:</label>
+                <input type="date" id="dataInput" value="">
+            </div>
+            <div class="input-container">
+                <label for="tipoSerataInput">Tipo Serata:</label>
+                <select id="tipoSerataInput">
+                    <option value="disco">Disco</option>
+                    <option value="chill">Chill</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </div>
+            <div id="customSerataContainer" class="input-container hidden">
+                <label for="customSerataInput">Tipo Serata Personalizzato:</label>
+                <input type="text" id="customSerataInput" value="">
+            </div>
+            <div class="input-container">
+                <label for="ingressoInput">Orario di Ingresso:</label>
+                <input type="time" id="ingressoInput" value="">
+            </div>
+            <div class="input-container">
+                <label for="startInput">Orario di Inizio:</label>
+                <input type="time" id="startInput" value="">
+            </div>
+            <div class="input-container">
+                <label for="chiusuraInput">Orario di Chiusura:</label>
+                <input type="time" id="chiusuraInput" value="">
+            </div>
+            <button type="submit" class="copy-button">Genera Annuncio</button>
+        </form>
+        <div id="messageOutputContainer" class="hidden">
+            <div class="message-container">
+                <div class="message-box">
+                    <div class="message-header">UnderGround Club</div>
+                    <div class="message-content" id="message-content"></div>
+                    <div class="message-timestamp" id="timestamp"></div>
+                </div>
+            </div>
+            <button id="copyButton" class="copy-button">Copia Messaggio</button>
+            <button id="reloadButton" class="copy-button"><i class="fas fa-sync-alt"></i></button>
+        </div>
+        <footer>
+            <p>© 2024 <a href="https://www.instagram.com/fooled_official/">Fooled</a>. Tutti i diritti riservati. By <a href="https://github.com/DexterNKW">Dexter</a>.</p>
+        </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
