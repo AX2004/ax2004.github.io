@@ -112,7 +112,7 @@ class WhatsAppFormatter {
     if (["giugno", "luglio", "agosto"].includes(currentMonth)) {
       seasonText = "                ••• *S U M M E R* •••";
     } else {
-      seasonText = "                 ••• *G O L D E N* •••";
+      seasonText = "                 ••• *U G C 3 . 0* •••";
     }
 
     let defaultSerata, defaultIngresso, defaultStart, defaultChiusura;
@@ -124,6 +124,11 @@ class WhatsAppFormatter {
       defaultChiusura = "01:00";
     } else if (serata === "chill") {
       defaultSerata = `Serata Chill con Musica e angolo Bar`;
+      defaultIngresso = "20:00";
+      defaultStart = "20:30";
+      defaultChiusura = "22:00";
+    } else if (serata === "cinema") {
+      defaultSerata = `Serata Cinema con Film e angolo Bar`;
       defaultIngresso = "20:00";
       defaultStart = "20:30";
       defaultChiusura = "22:00";
